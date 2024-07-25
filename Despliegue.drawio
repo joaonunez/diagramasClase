@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="IQnJqDeYZVHRsLvpSiJ3">
-    <mxGraphModel dx="1687" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -39,44 +39,11 @@
         <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-9" value="SERVIDOR WEB TOMCAT" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;container=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="270" width="340" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-37" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="115" y="735" width="20" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-20" value="BASE DE DATOS VIDA SALUD" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;container=0;" parent="1" vertex="1">
           <mxGeometry x="490" y="220" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-1" value="TCP/IP" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.118;exitY=0.485;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=open;startFill=0;" edge="1" parent="1" source="Xyj-qc0oV1CKGZ48Yo8w-20" target="Xyj-qc0oV1CKGZ48Yo8w-17">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="140" y="355" as="sourcePoint" />
-            <mxPoint x="70" y="344.40999999999997" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-39" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="80" y="340" width="135" height="300" as="geometry" />
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-12" value="-Log4.jar" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="Xyj-qc0oV1CKGZ48Yo8w-39" vertex="1">
-          <mxGeometry x="35" y="220" width="100" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-17" value="mariadb-java-client-3.4.0.jar" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="Xyj-qc0oV1CKGZ48Yo8w-39" vertex="1">
-          <mxGeometry width="100" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-19" value="vidasalud.war" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="Xyj-qc0oV1CKGZ48Yo8w-39" vertex="1">
-          <mxGeometry x="15" y="110" width="100" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-30" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.63;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="Xyj-qc0oV1CKGZ48Yo8w-39" source="Xyj-qc0oV1CKGZ48Yo8w-19" target="Xyj-qc0oV1CKGZ48Yo8w-17" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="35" y="70" as="sourcePoint" />
-            <mxPoint x="25" y="50" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-32" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.62;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="Xyj-qc0oV1CKGZ48Yo8w-39" source="Xyj-qc0oV1CKGZ48Yo8w-19" target="Xyj-qc0oV1CKGZ48Yo8w-12" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="55" y="200" as="sourcePoint" />
-            <mxPoint x="145" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-7" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="530" y="430" width="100" height="160" as="geometry" />
+          <mxGeometry x="450" y="450" width="100" height="160" as="geometry" />
         </mxCell>
         <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-2" value="vidasalud.ear" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="Y3_KKFiqaDDhX_Ar9Exh-7">
           <mxGeometry width="100" height="50" as="geometry" />
@@ -95,6 +62,39 @@
             <mxPoint x="261" y="610" as="sourcePoint" />
             <mxPoint x="260" y="663" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="250" width="160" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-37" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Y3_KKFiqaDDhX_Ar9Exh-10" vertex="1">
+          <mxGeometry width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-39" value="" style="group" parent="Y3_KKFiqaDDhX_Ar9Exh-10" vertex="1" connectable="0">
+          <mxGeometry x="80" y="340" width="135" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-9" value="" style="group" vertex="1" connectable="0" parent="Xyj-qc0oV1CKGZ48Yo8w-39">
+          <mxGeometry x="-35" y="5" width="135" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-12" value="-Log4.jar" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="Y3_KKFiqaDDhX_Ar9Exh-9" vertex="1">
+          <mxGeometry x="35" y="220" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-19" value="vidasalud.war" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="Y3_KKFiqaDDhX_Ar9Exh-9" vertex="1">
+          <mxGeometry x="15" y="110" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Xyj-qc0oV1CKGZ48Yo8w-32" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.62;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="Y3_KKFiqaDDhX_Ar9Exh-9" source="Xyj-qc0oV1CKGZ48Yo8w-19" target="Xyj-qc0oV1CKGZ48Yo8w-12" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="55" y="200" as="sourcePoint" />
+            <mxPoint x="145" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-11" value="TCP/IP" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=open;startFill=0;" edge="1" parent="1" target="Y3_KKFiqaDDhX_Ar9Exh-12" source="Xyj-qc0oV1CKGZ48Yo8w-20">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="882" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="440.40999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y3_KKFiqaDDhX_Ar9Exh-12" value="mariadb-java-client-3.4.0.jar" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
