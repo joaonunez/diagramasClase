@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="y3nSxOi1oGvmX9CvUGN1">
-    <mxGraphModel dx="574" dy="312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1509" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="UMnjD2So-exEDhG5ul0h-5" value="Las credenciales son correctas?" style="rhombus;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
-          <mxGeometry x="310" y="400" width="160" height="130" as="geometry" />
+        <mxCell id="UMnjD2So-exEDhG5ul0h-5" value="validar campos del formulario" style="rhombus;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="400" width="180" height="130" as="geometry" />
         </mxCell>
         <mxCell id="UMnjD2So-exEDhG5ul0h-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-14" target="UMnjD2So-exEDhG5ul0h-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -14,10 +14,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UMnjD2So-exEDhG5ul0h-1" value="LOGIN VIDA SALUD&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
-          <mxGeometry x="340" y="20" width="120" height="80" as="geometry" />
+          <mxGeometry x="350" y="20" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="UMnjD2So-exEDhG5ul0h-3" value="Validar Credenciales" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="340" y="260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UMnjD2So-exEDhG5ul0h-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.583;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-1" target="UMnjD2So-exEDhG5ul0h-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -26,11 +26,11 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="UMnjD2So-exEDhG5ul0h-14" value="Introducir Crendenciales" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="150" width="120" height="60" as="geometry" />
+          <mxGeometry x="340" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UMnjD2So-exEDhG5ul0h-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-3" target="UMnjD2So-exEDhG5ul0h-5">
+        <mxCell id="UMnjD2So-exEDhG5ul0h-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-3" target="UMnjD2So-exEDhG5ul0h-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="410" y="400" as="sourcePoint" />
+            <mxPoint x="390" y="360" as="sourcePoint" />
             <mxPoint x="460" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -44,6 +44,74 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="500" as="sourcePoint" />
             <mxPoint x="520" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-21" value="&lt;div&gt;consultar ala base de datos las credenciales&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-22" value="Solicitar al usuario que complete todos los campos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-22" target="UMnjD2So-exEDhG5ul0h-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530.0000000000001" y="650" as="sourcePoint" />
+            <mxPoint x="470" y="275" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="610" />
+              <mxPoint x="650" y="610" />
+              <mxPoint x="650" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-27" value="validar la contraseña del usuario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-21" target="UMnjD2So-exEDhG5ul0h-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="640" as="sourcePoint" />
+            <mxPoint x="70" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-29" value="validar campos del formulario" style="rhombus;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="750" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-30" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="820" as="sourcePoint" />
+            <mxPoint x="140" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-31" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="810" as="sourcePoint" />
+            <mxPoint x="390" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="UMnjD2So-exEDhG5ul0h-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="269.79999999999995" y="690" as="sourcePoint" />
+            <mxPoint x="269.79999999999995" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-33" value="Redirigir A la interfaz de Login" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-34" value="Negar Acceso" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-35" value="FIN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1010" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-36" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-33" target="UMnjD2So-exEDhG5ul0h-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="990" as="sourcePoint" />
+            <mxPoint x="120" y="1085" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMnjD2So-exEDhG5ul0h-37" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UMnjD2So-exEDhG5ul0h-34" target="UMnjD2So-exEDhG5ul0h-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1010" as="sourcePoint" />
+            <mxPoint x="430" y="1105" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
