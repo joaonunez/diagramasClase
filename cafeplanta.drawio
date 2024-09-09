@@ -1,1 +1,106 @@
-<mxfile host="app.diagrams.net"><diagram name="ClassDiagram"><mxGraphModel dx="593" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0"><root><mxCell id="0" /><mxCell id="1" parent="0" /><mxCell id="Pais" value="Pais&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="20" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="Region" value="Region&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ pais_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="200" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="Comuna" value="Comuna&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ region_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="380" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="Cafeteria" value="Cafeteria&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ direccion: String(255)&#10;+ comuna_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="20" y="200" width="160" height="100" as="geometry" /></mxCell><mxCell id="Usuario" value="Usuario&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ apellido_paterno: String(100)&#10;+ rut: String(12)&#10;+ rol_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="200" y="200" width="160" height="100" as="geometry" /></mxCell><mxCell id="Rol" value="Rol&#10;---&#10;+ id: Integer&#10;+ nombre: String(50)&#10;+ salario_base: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="380" y="200" width="160" height="100" as="geometry" /></mxCell><mxCell id="Beneficio" value="Beneficio&#10;---&#10;+ id: Integer&#10;+ precio: Integer&#10;+ descripcion: String(255)&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="20" y="400" width="160" height="100" as="geometry" /></mxCell><mxCell id="Producto" value="Producto&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ precio: Integer&#10;+ stock: Integer&#10;+ categoria_producto_id: Integer&#10;+ cafeteria_id: Integer&#10;+ tipo_item_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="200" y="400" width="160" height="100" as="geometry" /></mxCell><mxCell id="CategoriaProducto" value="CategoriaProducto&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="20" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="ComboMenu" value="ComboMenu&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;+ precio: Integer&#10;+ cafeteria_id: Integer&#10;+ tipo_item_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="200" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="TipoItem" value="TipoItem&#10;---&#10;+ id: Integer&#10;+ nombre: String(100)&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="380" y="20" width="160" height="100" as="geometry" /></mxCell><mxCell id="Venta" value="Venta&#10;---&#10;+ id: Integer&#10;+ fecha: Date&#10;+ monto_total: Integer&#10;+ estado: String(50)&#10;+ usuario_id: Integer&#10;+ cafeteria_id: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="20" y="200" width="160" height="100" as="geometry" /></mxCell><mxCell id="DetalleVenta" value="DetalleVenta&#10;---&#10;+ id: Integer&#10;+ venta_id: Integer&#10;+ item_id: Integer&#10;+ tipo_item_id: Integer&#10;+ cantidad: Integer&#10;+ precio_unitario: Integer&#10;" style="swimlane;fontStyle=1;rounded=0;" vertex="1" parent="1"><mxGeometry x="200" y="200" width="160" height="100" as="geometry" /></mxCell><mxCell id="Pais-Region" edge="1" source="Pais" target="Region" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Region-Comuna" edge="1" source="Region" target="Comuna" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Comuna-Cafeteria" edge="1" source="Comuna" target="Cafeteria" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Usuario-Rol" edge="1" source="Usuario" target="Rol" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Usuario-Beneficio" edge="1" source="Usuario" target="Beneficio" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Producto-CategoriaProducto" edge="1" source="Producto" target="CategoriaProducto" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Producto-ComboMenu" edge="1" source="Producto" target="ComboMenu" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Venta-Usuario" edge="1" source="Venta" target="Usuario" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Venta-DetalleVenta" edge="1" source="Venta" target="DetalleVenta" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Cafeteria-Producto" edge="1" source="Cafeteria" target="Producto" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Cafeteria-ComboMenu" edge="1" source="Cafeteria" target="ComboMenu" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Usuario-Cafeteria" edge="1" source="Usuario" target="Cafeteria" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Venta-Cafeteria" edge="1" source="Venta" target="Cafeteria" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="ComboMenu-Producto" edge="1" source="ComboMenu" target="Producto" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="DetalleVenta-Venta" edge="1" source="DetalleVenta" target="Venta" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="DetalleVenta-TipoItem" edge="1" source="DetalleVenta" target="TipoItem" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="Producto-TipoItem" edge="1" source="Producto" target="TipoItem" parent="1" style="endArrow=block;endFill=1;"><mxGeometry relative="1" as="geometry" /></mxCell></root></mxGraphModel></diagram></mxfile>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.12">
+  <diagram name="ClassDiagram" id="0">
+    <mxGraphModel dx="3140" dy="2280" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Pais" value="Pais&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;" style="swimlane;fontStyle=1;rounded=0;startSize=70;" parent="1" vertex="1">
+          <mxGeometry x="-510" y="110" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Region" value="Region&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ pais_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;startSize=80;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="90" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Comuna" value="Comuna&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ region_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="110" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Cafeteria" value="Cafeteria&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ direccion: String(255)&#xa;+ comuna_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="110" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario" value="Usuario&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ apellido_paterno: String(100)&#xa;+ rut: String(12)&#xa;+ rol_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="130" y="-70" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Rol" value="Rol&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(50)&#xa;+ salario_base: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="-70" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Beneficio" value="Beneficio&#xa;---&#xa;+ id: Integer&#xa;+ precio: Integer&#xa;+ descripcion: String(255)&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="-270" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CategoriaProducto" value="CategoriaProducto&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="600" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ComboMenu" value="ComboMenu&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ precio: Integer&#xa;+ cafeteria_id: Integer&#xa;+ tipo_item_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-190" y="370" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoItem" value="TipoItem&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="370" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Venta" value="Venta&#xa;---&#xa;+ id: Integer&#xa;+ fecha: Date&#xa;+ monto_total: Integer&#xa;+ estado: String(50)&#xa;+ usuario_id: Integer&#xa;+ cafeteria_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;startSize=140;" parent="1" vertex="1">
+          <mxGeometry x="380" y="-140" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DetalleVenta" value="DetalleVenta&#xa;---&#xa;+ id: Integer&#xa;+ venta_id: Integer&#xa;+ item_id: Integer&#xa;+ tipo_item_id: Integer&#xa;+ cantidad: Integer&#xa;+ precio_unitario: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="610" y="-70" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Pais-Region" style="endArrow=block;endFill=1;" parent="1" source="Pais" target="Region" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Region-Comuna" style="endArrow=block;endFill=1;" parent="1" source="Region" target="Comuna" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Comuna-Cafeteria" style="endArrow=block;endFill=1;" parent="1" source="Comuna" target="Cafeteria" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario-Rol" style="endArrow=block;endFill=1;" parent="1" source="Usuario" target="Rol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario-Beneficio" style="endArrow=block;endFill=1;" parent="1" source="Usuario" target="Beneficio" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Producto-CategoriaProducto" style="endArrow=block;endFill=1;" parent="1" source="Producto" target="CategoriaProducto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Producto-ComboMenu" style="endArrow=block;endFill=1;" parent="1" source="Producto" target="ComboMenu" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Venta-Usuario" style="endArrow=block;endFill=1;" parent="1" source="Venta" target="Usuario" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Venta-DetalleVenta" style="endArrow=block;endFill=1;" parent="1" source="Venta" target="DetalleVenta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cafeteria-Producto" style="endArrow=block;endFill=1;" parent="1" source="Cafeteria" target="Producto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cafeteria-ComboMenu" style="endArrow=block;endFill=1;" parent="1" source="Cafeteria" target="ComboMenu" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Usuario-Cafeteria" style="endArrow=block;endFill=1;" parent="1" source="Usuario" target="Cafeteria" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Venta-Cafeteria" style="endArrow=block;endFill=1;" parent="1" source="Producto" target="Cafeteria" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ComboMenu-Producto" style="endArrow=block;endFill=1;" parent="1" source="ComboMenu" target="Producto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DetalleVenta-Venta" style="endArrow=block;endFill=1;" parent="1" source="DetalleVenta" target="Venta" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DetalleVenta-TipoItem" style="endArrow=block;endFill=1;" parent="1" source="DetalleVenta" target="TipoItem" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Producto-TipoItem" style="endArrow=block;endFill=1;" parent="1" source="Producto" target="TipoItem" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y7JFrn3Y5HRvMEmZ6qSB-4" value="" style="endArrow=block;endFill=1;" edge="1" parent="1" source="Venta" target="Producto">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="560" as="sourcePoint" />
+            <mxPoint x="250" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Producto" value="Producto&#xa;---&#xa;+ id: Integer&#xa;+ nombre: String(100)&#xa;+ precio: Integer&#xa;+ stock: Integer&#xa;+ categoria_producto_id: Integer&#xa;+ cafeteria_id: Integer&#xa;+ tipo_item_id: Integer&#xa;" style="swimlane;fontStyle=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="370" width="160" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
