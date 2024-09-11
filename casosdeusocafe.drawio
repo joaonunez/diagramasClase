@@ -1,10 +1,34 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.13">
-  <diagram name="Página-1" id="ZBYuQi_jc34345ZCnntI">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<uml>
+    <actor name="Administrador" />
+
+    <usecase name="Registrar nuevo usuario" />
+    <usecase name="Iniciar sesión" />
+    <usecase name="Gestionar roles de usuario" />
+    <usecase name="Ver productos disponibles" />
+    <usecase name="Ver combos disponibles" />
+    <usecase name="Registrar una venta" />
+    <usecase name="Gestionar productos" />
+    <usecase name="Gestionar combos de productos" />
+    <usecase name="Actualizar estado de una venta" />
+    <usecase name="Agregar una nueva categoría de producto" />
+    <usecase name="Eliminar una venta" />
+    <usecase name="Actualizar precios de productos/combos" />
+    <usecase name="Agregar una nueva cafetería" />
+    <usecase name="Gestionar regiones y comunas" />
+
+    <association actor="Administrador" usecase="Registrar nuevo usuario" />
+    <association actor="Administrador" usecase="Iniciar sesión" />
+    <association actor="Administrador" usecase="Gestionar roles de usuario" />
+    <association actor="Administrador" usecase="Ver productos disponibles" />
+    <association actor="Administrador" usecase="Ver combos disponibles" />
+    <association actor="Administrador" usecase="Registrar una venta" />
+    <association actor="Administrador" usecase="Gestionar productos" />
+    <association actor="Administrador" usecase="Gestionar combos de productos" />
+    <association actor="Administrador" usecase="Actualizar estado de una venta" />
+    <association actor="Administrador" usecase="Agregar una nueva categoría de producto" />
+    <association actor="Administrador" usecase="Eliminar una venta" />
+    <association actor="Administrador" usecase="Actualizar precios de productos/combos" />
+    <association actor="Administrador" usecase="Agregar una nueva cafetería" />
+    <association actor="Administrador" usecase="Gestionar regiones y comunas" />
+</uml>
